@@ -8,3 +8,5 @@
 
 2. It is important to choose a license because:
  * Without one, you'd have "all rights reserved." Thus making your code inaccessible. Others will not be able to benefit from your software since they cannot legally use, study, modify, or redistribute it.
+
+3. First of all, people shouldn't use a project/software that doesn't have an explicit license because it is illegal. Technically the developers have "all rights reserved" if the software doesn't have a license. Thus rendering people unable to view or use source code of project.
