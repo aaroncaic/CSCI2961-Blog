@@ -1,3 +1,0 @@
-# CSCI2961-Blog
-Lab2 Blog Post
-# In progress...
