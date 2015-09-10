@@ -13,4 +13,4 @@
 
 4. Gopher was unsuccessful in its time because it did not follow the Open System Model. The team basically didn't trust the community with Gopher's development, so they put all the burden on themselves. Thus decreasing the work force dramatically. On the other hand, HTTP did exactly the opposite. The HTTP team took an approach similar to Linus', and followed the Open System Model. This help them gain a community and momentum, which ultimately lead to their success.
 
-5. 
+5. Android's kernel using GPLv2 license is easily justifiable. The GPLv2 license allows other developers to freely use and modify the source code to create custom roms or variations of the Android kernel. Examples are TouchWiz by Samsung, OxygenOS by OnePlus, HTC Sense by HTC, etc...  This spawns infinite amounts of derivatives that give Android credit and help it flourish. However, these derivatives must also use the GPLv2 license.  Thus protecting Android's kernel from being used in Proprietary licensed software.
