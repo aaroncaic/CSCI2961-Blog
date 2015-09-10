@@ -10,3 +10,7 @@
  * Without one, you'd have "all rights reserved." Thus making your code inaccessible. Others will not be able to benefit from your software since they cannot legally use, study, modify, or redistribute it.
 
 3. First of all, people shouldn't use a project/software that doesn't have an explicit license because it is illegal. Technically the developers have "all rights reserved" if the software doesn't have a license. Thus rendering people unable to view or use source code of project.
+
+4. Gopher was unsuccessful in its time because it did not follow the Open System Model. The team basically didn't trust the community with Gopher's development, so they put all the burden on themselves. Thus decreasing the work force dramatically. On the other hand, HTTP did exactly the opposite. The HTTP team took an approach similar to Linus', and followed the Open System Model. This help them gain a community and momentum, which ultimately lead to their success.
+
+5. 
