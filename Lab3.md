@@ -15,3 +15,7 @@
 1. I forked the Spoon-Knife repository, added the file myprojectprogress.md, committed, and pushed.
  * Screenshot:
  ![](https://raw.githubusercontent.com/aaroncaic/CSCI2961-Blog/master/Lab%20Screenshots/Lab3_3.png)
+
+2. I did the first four levels (Introduction Sequence) of Learn Git Branching.
+ * Screenshot:
+ ![](https://raw.githubusercontent.com/aaroncaic/CSCI2961-Blog/master/Lab%20Screenshots/Lab3_4.png)
