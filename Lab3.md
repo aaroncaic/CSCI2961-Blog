@@ -19,3 +19,9 @@
 2. I did the first four levels (Introduction Sequence) of Learn Git Branching.
  * Screenshot:
  ![](https://raw.githubusercontent.com/aaroncaic/CSCI2961-Blog/master/Lab%20Screenshots/Lab3_4.png)
+
+
+#### Part 3
+1. Forked the repo "pulreq," and cloned it on to my computer. I added a ".md" file named "Aaron Cheng.md" with the date in the first line. Finally, I made a pull request.
+ * Screenshot:
+  ![](https://raw.githubusercontent.com/aaroncaic/CSCI2961-Blog/master/Lab%20Screenshots/Lab3_5.png)
