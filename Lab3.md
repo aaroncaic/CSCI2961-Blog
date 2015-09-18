@@ -30,3 +30,6 @@
  * `git diff`: differences between working directory and the git index.
  * `git diff HEAD`: differences between working directory and the most recent commit.
  * `git diff –cached`: differences between the index and the most recent commit.
+
+3. I read about git tagging and understand its significance.
+4. Created a repo called `courseproject` and added `References.md` to it.
