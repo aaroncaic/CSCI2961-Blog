@@ -6,7 +6,7 @@
  * Link to repo: https://github.com/aaroncaic/Exercise01
  * ![](https://raw.githubusercontent.com/aaroncaic/CSCI2961-Blog/master/Lab%20Screenshots/Lab3_1.png)
 
-2. Next I created a new file called `first.py` and made modifications to it within different branchs.
+2. Next I created a new file called `first.py` and made modifications to it within the different branchs (master, mars, and jupiter).
  * Screenshot of the `git log --graph --oneline --decorate` command on the right, and the `gitk` command on the left.
  ![](https://raw.githubusercontent.com/aaroncaic/CSCI2961-Blog/master/Lab%20Screenshots/Lab3_2.png)
 
