@@ -46,4 +46,4 @@
 * Generally, companies would go for proprietary software because of its reliability and stability. Companies obviously wouldn't want to use software that has a lot of bugs or hard to use because they need stability and efficiency.
 * Individuals would most likely use open source software mainly because of its adaptability. Plus it's free!  The software can be modified or customized to suit the individuals' needs.  Even though individuals may encounter many bugs, they're still generally less impatient and less demanding than companies, thus they would most likely choose open source. However, it really comes down to preference in the end!
 
-##### Link to my commit request email: http://marc.info/?l=openbsd-tech&m=144305425101467&w=2
+##### Link to my commit request email: http://marc.info/?l=openbsd-tech&m=144307699405878&w=2
