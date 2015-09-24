@@ -19,8 +19,26 @@
 ### Open Source VS Proprietary Software
 #### Proprietary
 * ##### Pros:
-  * Usually very reliable.
-  * 
+  * Usually very reliable and stable.
+  * Less bugs.
+  * Secure.
+  * User friendly.
 
+* ##### Cons:
+ * Not free, usually expensive.
+ * Not very flexible or customizable.
+ * Cannot read or modify source code.
+ * Users have no say in development.
+
+#### Open Source
+* ##### Pros:
+  * Flexible and customizable.
+  * Free!
+  * Unified and fun community (usually).
+  * Can read and modify source code.
+  * Can constribute to software.
+
+* ##### Cons:
+ *
 
 * Link to my commit request email: http://marc.info/?l=openbsd-tech&m=144305425101467&w=2
