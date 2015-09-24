@@ -17,8 +17,8 @@
 
 
 ### Open Source VS Proprietary Software
-* #### Proprietary
- * Pros
+#### Proprietary
+* ##### Pros:
   * Usually very reliable.
   * 
 
