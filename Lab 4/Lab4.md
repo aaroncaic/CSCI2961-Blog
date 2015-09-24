@@ -17,5 +17,9 @@
 
 
 ### Open Source VS Proprietary Software
+* ##### Proprietary
+ * Usually very reliable (less bugs).
+ * 
+
 
 * Link to my commit request email: http://marc.info/?l=openbsd-tech&m=144305425101467&w=2
