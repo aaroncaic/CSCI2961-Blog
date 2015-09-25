@@ -34,3 +34,7 @@
 3. I read about git tagging and understand its significance.
 4. Created a repo called `courseproject` and added `References.md` to it.
  * Link: https://github.com/aaroncaic/courseproject
+
+5. Our group Forked the repository https://github.com/mskmoorthy/Story and we created one branch called `Table9`.
+ * LinK: https://github.com/InductiveWidget/Story
+ * In addition, we each created table_9.md, committed it, and then pushed it to 'Table9` branch.
