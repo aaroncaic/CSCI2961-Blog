@@ -33,33 +33,66 @@ Scanning dependencies of target Tutorial
   ```
  
 #### Step 2:
+ * Build it:
+  ```
+aaron@aaron-VirtualBox:~/Documents/Open Source/Lab 5/Step2/Build$ make
+Scanning dependencies of target MathFunctions
+[ 25%] Building CXX object MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.o
+[ 50%] Linking CXX static library libMathFunctions.a
+[ 50%] Built target MathFunctions
+Scanning dependencies of target Tutorial
+[ 75%] Building CXX object CMakeFiles/Tutorial.dir/tutorial.cxx.o
+[100%] Linking CXX executable Tutorial
+[100%] Built target Tutorial
+  ```
  
 
 #### Step 3:
-Results:
+ * Installed it:
 ```
-aaron@aaron-VirtualBox:~/Downloads/cmake-3.3.2/Tests/Tutorial/Step3/build$ ctestTest project /home/aaron/Downloads/cmake-3.3.2/Tests/Tutorial/Step3/build
+aaron@aaron-VirtualBox:~/Documents/Open Source/Lab 5/Step3/Build$ sudo make install
+[ 50%] Built target MathFunctions
+[100%] Built target Tutorial
+Install the project...
+-- Install configuration: ""
+-- Installing: /usr/local/bin/Tutorial
+-- Installing: /usr/local/include/TutorialConfig.h
+-- Installing: /usr/local/bin/libMathFunctions.a
+-- Installing: /usr/local/include/MathFunctions.h
+```
+
+ * Ran `ctests`:
+```
+aaron@aaron-VirtualBox:~/Documents/Open Source/Lab 5/Step3/Build$ ctest
+Test project /home/aaron/Documents/Open Source/Lab 5/Step3/Build
     Start 1: TutorialRuns
-1/7 Test #1: TutorialRuns .....................   Passed    0.04 sec
+1/5 Test #1: TutorialRuns .....................   Passed    0.05 sec
     Start 2: TutorialComp25
-2/7 Test #2: TutorialComp25 ...................   Passed    0.03 sec
+2/5 Test #2: TutorialComp25 ...................   Passed    0.03 sec
     Start 3: TutorialNegative
-3/7 Test #3: TutorialNegative .................   Passed    0.03 sec
+3/5 Test #3: TutorialNegative .................   Passed    0.04 sec
     Start 4: TutorialSmall
-4/7 Test #4: TutorialSmall ....................   Passed    0.04 sec
+4/5 Test #4: TutorialSmall ....................   Passed    0.02 sec
     Start 5: TutorialUsage
-5/7 Test #5: TutorialUsage ....................   Passed    0.03 sec
-    Start 6: TutorialComp-25
-6/7 Test #6: TutorialComp-25 ..................   Passed    0.03 sec
-    Start 7: TutorialComp64
-7/7 Test #7: TutorialComp64 ...................   Passed    0.04 sec
+5/5 Test #5: TutorialUsage ....................   Passed    0.02 sec
 
-100% tests passed, 0 tests failed out of 7
+100% tests passed, 0 tests failed out of 5
 
-Total Test time (real) =   0.26 sec
-
+Total Test time (real) =   0.21 sec
 ```
 
 #### Step 4:
+ * Installed it:
+```
+aaron@aaron-VirtualBox:~/Documents/Open Source/Lab 5/Step3/Build$ sudo make install
+[ 50%] Built target MathFunctions
+[100%] Built target Tutorial
+Install the project...
+-- Install configuration: ""
+-- Installing: /usr/local/bin/Tutorial
+-- Installing: /usr/local/include/TutorialConfig.h
+-- Installing: /usr/local/bin/libMathFunctions.a
+-- Installing: /usr/local/include/MathFunctions.h
+```
 
 #### Step 5:
