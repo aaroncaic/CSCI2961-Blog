@@ -159,7 +159,7 @@ Total Test time (real) =   0.26 sec
 ```
 
  * My `table.h` file:
-  ```
+```
   double sqrtTable[] = {
 0,
 1,
@@ -172,4 +172,4 @@ Total Test time (real) =   0.26 sec
 2.82843,
 3,
 0};
-  ```
+```
