@@ -82,17 +82,18 @@ Total Test time (real) =   0.21 sec
 ```
 
 #### Step 4:
- * Installed it:
+ * Build it:
 ```
-aaron@aaron-VirtualBox:~/Documents/Open Source/Lab 5/Step3/Build$ sudo make install
-[ 50%] Built target MathFunctions
-[100%] Built target Tutorial
-Install the project...
--- Install configuration: ""
--- Installing: /usr/local/bin/Tutorial
--- Installing: /usr/local/include/TutorialConfig.h
--- Installing: /usr/local/bin/libMathFunctions.a
--- Installing: /usr/local/include/MathFunctions.h
+aaron@aaron-VirtualBox:~/Documents/Open Source/Lab 5/Step4/Build$ cmake ..
+-- The C compiler identification is GNU 4.8.2
+-- The CXX compiler identification is GNU 4.8.2
+...
+-- Looking for log
+-- Looking for log - not found
+-- Looking for exp
+-- Looking for exp - not found
+...
+-- Build files have been written to: /home/aaron/Documents/Open Source/Lab 5/Step4/Build
 ```
 
 #### Step 5:
