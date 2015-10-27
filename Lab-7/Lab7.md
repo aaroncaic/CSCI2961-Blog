@@ -10,5 +10,5 @@
 
 #### Gitstats
 1. Screenshot:
- * ![]()
+ ![](https://raw.githubusercontent.com/aaroncaic/CSCI2961-Blog/master/Lab%20Screenshots/Lab7_1.png)
  * From what I can tell the stats from Gitstats are pretty much the same from my findings in part 1, though the number of lines of code differ by 3.
