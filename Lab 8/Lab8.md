@@ -12,13 +12,10 @@
     2.   `nodes` to `graph`
     3.   `moron` to `smart`
     4.   `pound` to `marks`
-    ![]()
 6. All but the last test case yield no results.
 7. After modifying the code to work for 4 letter words, I tested the following 4 letter words:
     1.   `cold` to `warm`
     2.   `love` to `hate`
-
-![](https://raw.githubusercontent.com/aaroncaic/CSCI2961-Blog/master/Lab%20Screenshots/Lab8_1.png)
 8. All of those test cases worked.
 
 #### Implementation
