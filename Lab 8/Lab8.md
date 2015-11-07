@@ -1,12 +1,17 @@
-## Lab 7 Blog
+## Lab 8 Blog
 
-### CloudBench
-1. Number of contributors: 2
-2. Number of lines: 1231 lines of code
-3. First Commit:
- * bf4cd77c0cf5f6fbab9f507a687d493f87a58dbb Create/Save/Delete file functionality
-4. Last Commit:
- * 62c4fc23bbc7016a0234b15d61f8a6d317f32654 Merge pull request #19 from CloudBench-IDE/FilesAPI
+#### Installation & Tutorial
+1. For this lab, I installed `Networkx` located [here](https://networkx.github.io/ using GitHub clone method).
+2. After Networkx, I attempted to install `matplotlib` but I ran out of memory on my virtual box.
+3. To get familiar with `Networkx`, I worked through the [tutorial](https://networkx.github.io/documentation/latest/_downloads/networkx_tutorial.pdf) until I felt comfortable.
+
+#### Read & Understand
+4. The wordladder [implementation](https://github.com/networkx/networkx/blob/master/examples/graph/words.py) provided to us was relatively simple and easy to understand.
+5. I tested the code for the following words:
+    1.   `chaos` to `order`
+    2.   `nodes` to `graph`
+    3.   `moron` to `smart`
+    4.   `pound` to `marks`
 
 #### Gitstats
 1. Screenshot:
