@@ -1,26 +1,71 @@
-## Lab 8 Blog
+## Lab 9 Blog
 
-#### Installation & Tutorial
-1. For this lab, I installed `Networkx` located [here](https://networkx.github.io/ using GitHub clone method).
-2. After Networkx, I attempted to install `matplotlib` but I ran out of memory on my virtual box.
-3. To get familiar with `Networkx`, I worked through the [tutorial](https://networkx.github.io/documentation/latest/_downloads/networkx_tutorial.pdf) until I felt comfortable.
+1. First, I installed `arules` and `arulesViz` packages in R Studio.
+2. I read Chapter 9 of the book on [Association Rule Mining](https://cran.r-project.org/doc/contrib/Zhao_R_and_data_mining.pdf) and followed the tutorial. Here is my code:
+    ```r
+    str(titanic.raw)
+    df <- as.data.frame(titanic.raw)
+    head(df)
+    titanic.raw <- NULL
+    for(i in 1:4) {
+      titanic.raw <- cbind(titanic.raw, rep(as.character(df[,i]), df$Freq) )
+    }
+    titanic.raw <- as.data.frame(titanic.raw)
+    names(titanic.raw) <- names(df)[1:4]
+    dim(titanic.raw)
+    str(titanic.raw)
+    head(titanic.raw)
+    summary(titanic.raw)
+    
+    library(arules)
+    rules.all <- apriori(titanic.raw)
+    rules.all
+    inspect(rules.all)
+    
+    rules <- apriori(titanic.raw, control = list(verbose=F),
+                     parameter = list(minlen=2, supp=0.005, conf=0.8),
+                     appearance = list(rhs=c("Survived=No", "Survived=Yes"),
+                                       default="lhs"))
+    quality(rules) <- round(quality(rules), digits=3)
+    rules.sorted <- sort(rules, by="lift")
+    inspect(rules.sorted)
+    
+    rules <- apriori(titanic.raw, control = list(verbose=F),
+                     parameter = list(minlen=3, supp=0.002, conf=0.2),
+                     appearance = list(rhs=c("Survived=Yes"),
+                                       lhs=c("Class=1st", "Class=2nd", "Class=3rd", "Age=Child", "Age=Adult"), 
+                                       default="none"))
+    #quality(rules) <- round(quality(rules), digits=3)
+    rules.sorted <- sort(rules, by="confidence" )
+    inspect(rules.sorted)
+    
+    rules <- apriori(titanic.raw, control = list(verbose=F),
+                     parameter = list(minlen=3, supp=0.002, conf=0.2),
+                     appearance = list(rhs=c("Survived=Yes"),
+                                       lhs=c("Class=1st", "Class=2nd", "Class=3rd", "Age=Child"), 
+                                       default="none"))
+    quality(rules) <- round(quality(rules), digits=3)
+    rules.sorted <- sort(rules, by="confidence" )
+    inspect(rules.sorted)
+    
+    source("http://bioconductor.org/biocLite.R")
+    biocLite("Rgraphviz")
+    
+    library(arulesViz)
+    plot(rules.all)
+    plot(rules.all, method="grouped")
+    plot(rules.all, method="graph")
+    plot(rules.all, method="graph", control=list(type="items"))
+    plot(rules.all, method="paracoord", control=list(reorder=TRUE))
+    ```
+3. Then, I played around with some of the parameters of the rules:
+    ![](https://raw.githubusercontent.com/aaroncaic/CSCI2961-Blog/master/Lab%20Screenshots/Lab9_6.png)
+    ![](https://raw.githubusercontent.com/aaroncaic/CSCI2961-Blog/master/Lab%20Screenshots/Lab9_7.png)
+    ![](https://raw.githubusercontent.com/aaroncaic/CSCI2961-Blog/master/Lab%20Screenshots/Lab9_8.png)
 
-#### Read & Understand
-4. The wordladder [implementation](https://github.com/networkx/networkx/blob/master/examples/graph/words.py) provided to us was relatively simple and easy to understand.
-5. I tested the code for the following 5 letter words:
-    1.   `chaos` to `order`
-    2.   `nodes` to `graph`
-    3.   `moron` to `smart`
-    4.   `pound` to `marks`
-6. All but the last test case yield no results.
-7. After modifying the code to work for 4 letter words, I tested the following 4 letter words:
-    1.   `cold` to `warm`
-    2.   `love` to `hate`
-8. All of those test cases worked.
-
-#### Implementation
-9. Finally I implemented a variation of wordladder where we consider two words are adjacent if the number of letters that differ (not necessarily in same position) by 1. I modified the `edit_distance` function by adding 4 lines to it.
- ![](https://raw.githubusercontent.com/aaroncaic/CSCI2961-Blog/master/Lab%20Screenshots/Lab8_4.png)
-10. Basically the code generates all permutations of `word`, and for each permutation it performs what `edit_distance` used to do.
-11. Once again, I tested the new variation with the 5 letter words indicated above and it was a success.
- ![](https://raw.githubusercontent.com/aaroncaic/CSCI2961-Blog/master/Lab%20Screenshots/Lab8_3.png)
+4. Finally, I plotted the rules using different types of graphs:
+    ![](https://raw.githubusercontent.com/aaroncaic/CSCI2961-Blog/master/Lab%20Screenshots/Lab9_1.png)
+    ![](https://raw.githubusercontent.com/aaroncaic/CSCI2961-Blog/master/Lab%20Screenshots/Lab9_2.png)
+    ![](https://raw.githubusercontent.com/aaroncaic/CSCI2961-Blog/master/Lab%20Screenshots/Lab9_3.png)
+    ![](https://raw.githubusercontent.com/aaroncaic/CSCI2961-Blog/master/Lab%20Screenshots/Lab9_4.png)
+    ![](https://raw.githubusercontent.com/aaroncaic/CSCI2961-Blog/master/Lab%20Screenshots/Lab9_5.png)
