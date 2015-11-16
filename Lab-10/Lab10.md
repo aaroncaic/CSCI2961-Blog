@@ -7,8 +7,23 @@
 ---------------------------------------
 
 ##### Part 1
-1. First we got 
-2. I read Chapter 9 of the book on [Association Rule Mining](https://cran.r-project.org/doc/contrib/Zhao_R_and_data_mining.pdf) and followed the tutorial. Here is my code:
+* We "synced" our Arduino/Genuino Mega 2560 board with Arduino IDE.
+* After that we compiled and uploaded `Blink` without a problem.
+* The LED blinked every second, but we also played around with the speed.
+
+---------------------------------------
+
+##### Part 2
+* We copied and pasted the custom LCD library (provided to us) into the Arduino IDE.
+* Compiling the code gave us errors because it could not recognize a lot of the characters in the code due to copy and pasting.
+* Thus we typed the code manually instead. That solved the issue.
+* After compiling and uploading the code, the LCD printed "Hello World" as it should.
+* Screenshot:
+ ![](https://raw.githubusercontent.com/aaroncaic/CSCI2961-Blog/master/Lab%20Screenshots/Lab10_1.jpg)
+
+
+
+I read Chapter 9 of the book on [Association Rule Mining](https://cran.r-project.org/doc/contrib/Zhao_R_and_data_mining.pdf) and followed the tutorial. Here is my code:
     ```r
     str(titanic.raw)
     df <- as.data.frame(titanic.raw)
