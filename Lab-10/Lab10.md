@@ -30,8 +30,14 @@
 
 ---------------------------------------
 
-##### Part 3 (Continued...: Handling Newlines)
-* Making our code handle newlines, `\n`, took a lot longer than expected.
+##### Part 3 (Continued... Handling Newlines)
+* Making our code handle newlines, `\n`, took a lot more time than we expected.
 * A lot of trial and error was involved due to our lack of knowledge on the Arduino library.
 * In the end we finally got it to work properly. We typed in "hello \nworld" and here is the result:
  ![](https://raw.githubusercontent.com/aaroncaic/CSCI2961-Blog/master/Lab%20Screenshots/Lab10_3.jpg)
+
+---------------------------------------
+
+##### Part 4 (Serial APIs - Implementing Functions)
+* Since part 3 took us a while to complete, we did not have enough time to finish part 4 or part 5 of this lab.
+* However, we did start working on handling the command to set the current time ("\t<time>").
