@@ -1,5 +1,4 @@
 ## Lab 10 Blog
----------------------------------------
 
 #### Group Members: 
   * Aaron Cheng
